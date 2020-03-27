@@ -13,6 +13,17 @@ module.exports = {
     useNullAsDefault: true, //habilita valores padrao vazio para colunas do bd
   },
 
+  test: {
+    client: 'sqlite3',
+    connection: {
+      filename: './src/database/test.sqlite'
+    },
+    migrations: {
+      directory: './src/database/migrations'
+    },
+    useNullAsDefault: true, //habilita valores padrao vazio para colunas do bd
+  },
+
   staging: {
     client: 'postgresql',
     connection: {
